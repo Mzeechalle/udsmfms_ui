@@ -1,0 +1,57 @@
+{
+  "name": "udsmleave_ui",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0",
+    "@ant-design/icons": "^4.7.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.18.5",
+    "chart.js": "^3.7.1",
+    "moment": "^2.29.3",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^4.0.1",
+    "react-confirm-alert": "^2.7.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-highlight-words": "^0.17.0",
+    "react-horizontal-timeline": "^1.5.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-to-print": "^2.14.7",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "webpack": "^4.44.2"
+  }
+}
