@@ -89,7 +89,7 @@ To start the development server locally run
 ## Getting Started using the App
 To get started using the web application use the following link
 
-https://coictfms.kelvinkedyson.com/#/
+https://coictfms.mzeechalle.com/#/
     
 ## Support
 
@@ -107,11 +107,11 @@ Please adhere to this project's `code of conduct`.
 
 ## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/kelvkedyson/image/upload/v1655836521/login_uzu6sn.png)
+![App Screenshot](https://res.cloudinary.com/dokdxkfp6/image/upload/v1689622714/Screenshot_199_ej8smd.png)
 
-![App Screenshot](https://res.cloudinary.com/kelvkedyson/image/upload/v1655836473/adminDashb_cmo4vc.png)
+![App Screenshot](https://res.cloudinary.com/dokdxkfp6/image/upload/v1689622673/Screenshot_200_ct2awp.png)
 
-![App Screenshot](https://res.cloudinary.com/kelvkedyson/image/upload/v1655836638/Screenshot_from_2022-06-21_21-26-24_szxz31.png)
+![App Screenshot](https://res.cloudinary.com/dokdxkfp6/image/upload/v1689622720/Screenshot_198_a0yfw4.png)
 
 
 ## Running Tests
