@@ -80,7 +80,7 @@ const ViewSpecialTest = () => {
                 <div>
                         <center>
                             <h1><b>UNIVERSITY OF DAR ES SALAAM</b></h1>
-                            <h1><b>APPLICATION FOR SPECIAL Test</b></h1>
+                            <h1><b>APPLICATION FOR SPECIAL TEST</b></h1>
                         </center>
                         {
                             !isLoading ? 

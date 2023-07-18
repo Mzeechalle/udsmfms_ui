@@ -200,13 +200,13 @@ const Routes = () => {
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
-                        path="/viewspecialexams"
+                        path="/viewspecialexam"
                         name="viewspecialexam"
                         component={ViewSpecialExam}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
-                        path="/viewspecialtests"
+                        path="/viewspecialtest"
                         name="viewspecialtest"
                         component={ViewSpecialTest}
                         isAuth={isAuth}
