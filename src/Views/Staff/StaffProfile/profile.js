@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Statistic, Card, Button, Divider, Image, Tag, Tooltip } from 'antd';
 import { getStaffProfile } from '../../../Data/Staff';
 import { hideString } from '../../../Helpers/customFunctions';
+import Colleges from '../../Colleges';
 
 const Profile = () => {
 
@@ -11,6 +12,7 @@ const Profile = () => {
     const [ subVote, setSubVote ] = useState("");
     const [ position, setPosition ] = useState();
     const [ department, setDepartment ] = useState({});
+    const [ college, setCollege ] = useState({});
     const [ family_members, setFamilyMembers ] = useState([]);
     const [ isLoading, setIsLoading ] = useState(false);
 
@@ -23,9 +25,10 @@ const Profile = () => {
                 console.log(data.profile[0]);
                 setProfile(data.profile[0]);
                 setStaff(data.profile[0].staff);
-                setSubVote(data.profile[0].subVote)
+                setSubVote(data.profile[0].subVote);
                 setPosition(data.profile[0].cadre);
                 setDepartment(data.profile[0].department);
+                setCollege(data.profile[0].college);
                 setFamilyMembers(data.profile[0].family_members);
             },
             (error) => {
@@ -71,7 +74,7 @@ const Profile = () => {
                                 </Row>
                                 <Row gutter={[8, 8]}>
                                     <Col xs={24} sm={8} md={12} lg={12}>
-                                        <p><b>College</b> :CoICT</p>
+                                        <p><b>College</b> : {college.college_abbrv}</p>
                                     </Col>
                                     <Col xs={24} sm={8} md={12} lg={12}>
                                         <p><b>Department</b> : {department.dept_abbrv}</p>
@@ -107,14 +110,14 @@ const Profile = () => {
                         <Row gutter={[8, 8]}>
                             <Col xs={24} sm={24} md={12} lg={12}>
                             <Divider style={{color: "gray", fontSize:"14px"}}>Contact Details</Divider>
-                                <p><b>Phone</b> :{profile.phone}</p>
-                                <p><b>Email</b> :{staff.email}</p>
-                                <p><b>Address</b> :{profile.address}</p>
+                                <p><b>Phone</b> : {profile.phone}</p>
+                                <p><b>Email</b> : {staff.email}</p>
+                                <p><b>Address</b> : {profile.address}</p>
                             </Col>
                             <Col xs={24} sm={24} md={12} lg={12}>
                             <Divider style={{color: "gray", fontSize:"14px"}}>Bank Details</Divider>
-                                <p><b>Bank Name</b> :{profile.bank_name}</p>
-                                <p><b>Account Number</b> :{hideString(`${profile.account_number}`)}</p>
+                                <p><b>Bank Name</b> : {profile.bank_name}</p>
+                                <p><b>Account Number</b> : {hideString(`${profile.account_number}`)}</p>
                             </Col>
                         </Row>
                         <Row gutter={[8, 8]}>

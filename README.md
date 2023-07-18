@@ -46,7 +46,7 @@ and private institutions.
 ## Demo
 The project Demo is available through the following link
 
-https://kelvkedyson.github.io/udsmleave_ui/#/
+https://mzeechalle.github.io/udsmfms_ui/#/
 
 
 ## Cloning the Project
@@ -55,12 +55,12 @@ https://kelvkedyson.github.io/udsmleave_ui/#/
 To clone this project's ui run
 
 ```bash
-  git clone https://github.com/kelvkedyson/udsmleave_ui.git
+  git clone https://github.com/mzeechalle/udsmfms_ui.git
 ```
 In the cloned project's directory run
 
 ```bash
-  cd udsmleave_ui(master)
+  cd udsmfms_ui(master)
 ```
 
 To start the project ui locally run
@@ -73,12 +73,12 @@ To start the project ui locally run
 To clone this project's api run
 
 ```bash
-   git clone https://github.com/kelvkedyson/udsmleave_api.git
+   git clone https://github.com/mzeechalle/udsmfms_api.git
 ```
 In the cloned project's directory run
 
 ```bash
-   cd udsmleave_api(master)
+   cd udsmfms_api(master)
 ```
 
 To start the development server locally run
@@ -93,14 +93,14 @@ https://coictfms.kelvinkedyson.com/#/
     
 ## Support
 
-For support, email kelvinkedysonzacharia@gmail.com
+For support, email mzeechalle@gmail.com
 
 
 ## Contributing
 
 Contributions are always welcome!
 
-See `https://github.com/kelvkedyson/udsmleave_ui.git` for ways to get started.
+See `https://github.com/mzeechalle/udsmfms_ui.git` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
@@ -125,12 +125,12 @@ To run tests, run the following command
 
 ## Authors
 
-- [@kelvinkedyson](https://github.com/kelvkedyson)
+- [@mzeechalle](https://github.com/mzeechalle)
 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at kelvinkedysonzacharia@gmail.com
+If you have any feedback, please reach out to us at mzeechalle@gmail.com
 
 ## Color Reference
 

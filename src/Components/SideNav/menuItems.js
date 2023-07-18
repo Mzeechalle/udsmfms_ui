@@ -7,7 +7,11 @@ import {
     SolutionOutlined,
     UserSwitchOutlined,
     ContainerOutlined,
-    SnippetsOutlined
+    FileOutlined,
+    SnippetsOutlined,
+    FileTextOutlined,
+    ProfileOutlined,
+    OneToOneOutlined
   } from '@ant-design/icons';
 
 const ADMINITEMS = [
@@ -50,8 +54,8 @@ const ADMINITEMS = [
     {
         "key": 7,
         "icon": <SolutionOutlined />,
-        "item": "Students",
-        "route": "/students"
+        "item": "Student",
+        "route": "/student"
     },
 
     {
@@ -92,10 +96,32 @@ const STUDENTITEMS = [
 
     {
         "key": 3,
-        "icon": <ContainerOutlined />,
-        "item": "My Requests",
-        "route": "/myrequests"
+        "icon": <FileOutlined />,
+        "item": "My Postponements",
+        "route": "/mypostponements"
+    },
+
+    {
+        "key": 4,
+        "icon": <FileTextOutlined />,
+        "item": "My Resume of Studies",
+        "route": "/myresumestudies"
+    },
+
+    {
+        "key": 5,
+        "icon": <ProfileOutlined />,
+        "item": "My Special Tests",
+        "route": "/myspecialtests"
+    },
+
+    {
+        "key": 7,
+        "icon": <OneToOneOutlined />,
+        "item": "My Special Exams",
+        "route": "/myspecialexams"
     }
+
 
 ];
 
@@ -105,9 +131,56 @@ const MANAGEMENTITEMS = [
     {
         "key": 4,
         "icon": <SnippetsOutlined />,
-        "item": "Received Requests",
+        "item": "Received Leaves",
         "route": "/requests"
+    },
+
+    {
+        "key": 5,
+        "icon": <FileOutlined />,
+        "item": "Received Postponements",
+        "route": "/postponements"
+    },
+
+    {
+        "key": 6,
+        "icon": <FileTextOutlined />,
+        "item": "Received Resume of Studies",
+        "route": "/resumestudies"
+    },
+
+    {
+        "key": 7,
+        "icon": <ProfileOutlined />,
+        "item": "Received Special Tests",
+        "route": "/specialtests"
+    },
+
+    {
+        "key": 8,
+        "icon": <OneToOneOutlined />,
+        "item": "Received Special Exams",
+        "route": "/specialexams"
     }
+];
+
+const MOI_TEMS = [
+
+    ...STAFFITEMS,
+    {
+        "key": 4,
+        "icon": <ProfileOutlined />,
+        "item": "Received Special Tests",
+        "route": "/specialtests"
+    },
+
+    {
+        "key": 5,
+        "icon": <OneToOneOutlined />,
+        "item": "Received Special Exams",
+        "route": "/specialexams"
+    }
+
 ];
 
 const UNKNOWNITEMS = [
@@ -124,5 +197,6 @@ export {
     STAFFITEMS,
     STUDENTITEMS,
     MANAGEMENTITEMS,
+    MOI_TEMS,
     UNKNOWNITEMS
 };

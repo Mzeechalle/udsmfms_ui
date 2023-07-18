@@ -1,0 +1,9 @@
+-> src/Api => folder contains all utility functions for making API requests to a backend server
+-> src/Assets => folder contains images and stylesheets used in application
+-> src/Authentication => folder handles API requests and responses related to that resource
+-> src/Components => folder that contains all reusable components used in the application
+-> src/Data => folder that contains all constant variables or data for the application 
+-> src/Helpers => folder that contains all the helper functions like .. regex, functions to calculate dates, arithmetic, date of birth..e.t.c
+-> src/Routes => folder that contain all modules that define the routes of the application and map them to their respective components
+-> src/Services => folder that defines all the services to be used like sending emails, uploading media files to cloud.. e.t.c
+-> src/Views=> folder that contains all modules that represent the different views or screens of the application

@@ -6,7 +6,7 @@ import { SmileOutlined } from '@ant-design/icons';
 import { getStaffProfile } from '../../../Data/Staff';
 
 const StaffProfile = () => {
-
+    
     return(
         <>
             {

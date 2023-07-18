@@ -8,6 +8,7 @@ const { Option } = Select;
 const RegisterAccountModal = () => {
 
     const [ position, setPosition ] = useState('');
+    const [ role, setRole ] = useState('');
     const [ firstname, setFirstName ] = useState('');
     const [ middlename, setMiddleName ] = useState('');
     const [ lastname, setLastName ] = useState('');
@@ -38,7 +39,7 @@ const RegisterAccountModal = () => {
                 lastname,
                 email,
                 password,
-                1,
+                role,
                 position,
                 (data) => {
                     if(data.error){

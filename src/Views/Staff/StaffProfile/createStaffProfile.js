@@ -118,7 +118,7 @@ const CreateStaffProfile = () => {
 
     return(
         <Card
-            title="My Leaves" 
+            title="My Profile" 
             bordered={true}
         >
             <Form ref={formRef} form={form} onFinish={onFinish} layout="vertical">

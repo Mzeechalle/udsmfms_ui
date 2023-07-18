@@ -5,7 +5,7 @@ import{ useAuth } from "../Authentication/auth-context";
 import PanelLayout from '../Views/PanelLayout';
 import Dashboard from '../Components/Dashboard';
 import Staff from '../Views/Staff';
-import Students from '../Views/Students';
+import Student from '../Views/Student';
 import Positions from '../Views/Positions';
 import Roles from '../Views/Roles';
 import Departments from '../Views/Departments';
@@ -17,14 +17,34 @@ import EditRole from '../Views/Roles/EditRole';
 import AddUser from '../Views/SystemUsers/AddUser';
 import EditUser from '../Views/SystemUsers/EditUser';
 import StaffProfile from '../Views/Staff/StaffProfile';
+import StudentProfile from '../Views/Student/StudentProfile';
 import StaffLeaves from '../Views/Staff/StaffLeaves';
+import StudentPostponements from '../Views/Student/StudentPostponements';
+import StudentResumeStudies from '../Views/Student/StudentResumeStudies';
+import StudentSpecialExams from '../Views/Student/StudentSpecialExams';
+import StudentSpecialTests from '../Views/Student/StudentSpecialTests';
 import ViewLeave from '../Views/Staff/StaffLeaves/ViewLeave';
+import ViewPostponement from '../Views/Student/StudentPostponements/ViewPostponement';
+import ViewResumeStudies from '../Views/Student/StudentResumeStudies/ViewResumeStudies';
+import ViewSpecialExam from '../Views/Student/StudentSpecialExams/ViewSpecialExams';
+import ViewSpecialTest from '../Views/Student/StudentSpecialTests/ViewSpecialTests';
 import ApplyLeave from '../Views/Staff/StaffLeaves/ApplyLeave';
+import ApplyPostponement from '../Views/Student/StudentPostponements/ApplyPostponement';
+import ApplyResumeStudies from '../Views/Student/StudentResumeStudies/ApplyResumeStudies';
+import ApplySpecialExam from '../Views/Student/StudentSpecialExams/ApplySpecialExams';
+import ApplySpecialTest from '../Views/Student/StudentSpecialTests/ApplySpecialTests';
 import CreateStaffProfile from '../Views/Staff/StaffProfile/createStaffProfile';
+import CreateStudentProfile from '../Views/Student/StudentProfile/createStudentProfile';
 import UpdateProfile from '../Views/Staff/StaffProfile/UpdateProfile';
+import UpdateStudentProfile from '../Views/Student/StudentProfile/UpdateStudentProfile';
 import ReceivedRequests from '../Views/Management/ReceivedRequests';
+import ReceivedPostponements from '../Views/Management/ReceivedPostponements';
+import ReceivedResumeStudies from '../Views/Management/ReceivedResumeStudies';
+import ReceivedSpecialExams from '../Views/Management/ReceivedSpecialExams';
+import ReceivedSpecialTests from '../Views/Management/ReceivedSpecialTests';
 import Colleges from "../Views/Colleges";
 import AddCollege from '../Views/Colleges/AddCollege';
+
 
 const loading = () => {
     return(
@@ -74,7 +94,7 @@ const Routes = () => {
                     <ProtectedRoute
                         path="/students"
                         name="students"
-                        component={Students}
+                        component={Student}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
@@ -126,9 +146,39 @@ const Routes = () => {
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
+                        path="/studentprofile"
+                        name="studentprofile"
+                        component={StudentProfile}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
                         path="/myleaves"
                         name="myleaves"
                         component={StaffLeaves}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/mypostponements"
+                        name="mypostponements"
+                        component={StudentPostponements}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/myresumestudies"
+                        name="/myresumestudies"
+                        component={StudentResumeStudies}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/myspecialexams"
+                        name="myspecialexams"
+                        component={StudentSpecialExams}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/myspecialtests"
+                        name="myspecialtests"
+                        component={StudentSpecialTests}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
@@ -138,9 +188,57 @@ const Routes = () => {
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
+                        path="/viewpostponement"
+                        name="viewpostponement"
+                        component={ViewPostponement}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/viewresumestudies"
+                        name="viewresumestudies"
+                        component={ViewResumeStudies}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/viewspecialexams"
+                        name="viewspecialexam"
+                        component={ViewSpecialExam}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/viewspecialtests"
+                        name="viewspecialtest"
+                        component={ViewSpecialTest}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
                         path="/applyleave"
                         name="applyleave"
                         component={ApplyLeave}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/applypostponement"
+                        name="applypostponement"
+                        component={ApplyPostponement}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/applyresumestudies"
+                        name="applyresumestudies"
+                        component={ApplyResumeStudies}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/applyspecialexam"
+                        name="applyspecialexam"
+                        component={ApplySpecialExam}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/applyspecialtest"
+                        name="applyspecialtest"
+                        component={ApplySpecialTest}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
@@ -150,15 +248,51 @@ const Routes = () => {
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
+                        path="/createstudentprofile"
+                        name="create_student_profile"
+                        component={CreateStudentProfile}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
                         path="/updatestaffprofile"
                         name="update_staff_profile"
                         component={UpdateProfile}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute
+                        path="/updatestudentprofile"
+                        name="update_student_profile"
+                        component={UpdateStudentProfile}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
                         path="/requests"
                         name="received_requests"
                         component={ReceivedRequests}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/postponements"
+                        name="received_postponements"
+                        component={ReceivedPostponements}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/resumestudies"
+                        name="received_resumestudies"
+                        component={ReceivedResumeStudies}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/specialtests"
+                        name="received_specialtests"
+                        component={ReceivedSpecialTests}
+                        isAuth={isAuth}
+                    />
+                    <ProtectedRoute
+                        path="/specialexams"
+                        name="received_specialexams"
+                        component={ReceivedSpecialExams}
                         isAuth={isAuth}
                     />
                     <ProtectedRoute

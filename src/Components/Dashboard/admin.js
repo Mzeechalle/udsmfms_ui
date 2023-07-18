@@ -59,7 +59,7 @@ const AdminDashboard = () => {
                                 <Statistic title="Student" value={studentUsers} />
                             </Col>
                             <Col xs={24} sm={8} md={8} lg={8}>
-                                <Statistic title="Admin" value={2} />
+                                <Statistic title="Admin" value={1} />
                             </Col>
                         </Row>
                     </Card>
